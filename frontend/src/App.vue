@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <table class="table borderless align-middle">
+    <table class="table bg-light text-dark borderless align-middle">
       <thead>
         <tr>
           <th>ID</th>
@@ -169,9 +169,7 @@ export default {
 </script>
 
 <style>
-body {
-  background-color: #f8f9fa;
-}
+
 
 .table td {
   vertical-align: middle;
