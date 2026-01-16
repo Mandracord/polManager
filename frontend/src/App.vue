@@ -37,7 +37,7 @@
           <th>POL ID</th>
           <th>Handle</th>
           <th>SQ ACC</th>
-          <th class="text-center" style="width: 70px;">2FA</th>
+          <th class="text-center" style="width: 70px;">2FA Enabled</th>
           <th class="text-end">Actions</th>
         </tr>
       </thead>
@@ -48,7 +48,7 @@
           <td>{{ entry.handle }}</td>
           <td>{{ entry.sq_acc }}</td>
           <td class="text-center">
-            <i :class="entry.two_fa ? 'fas fa-check text-success' : 'fas fa-times text-danger'"></i>
+            <i :class="entry.auth_token ? 'fas fa-check text-success' : 'fas fa-times text-danger'"></i>
           </td>
           <td class="text-end d-flex justify-content-end gap-1">
             <button class="btn btn-sm btn-primary" @click="copyPolId(entry)">

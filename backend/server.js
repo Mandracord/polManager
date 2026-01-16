@@ -36,7 +36,7 @@ const initDB = async () => {
       pol_id VARCHAR(255) NOT NULL,
       handle VARCHAR(255) NOT NULL,
       sq_acc VARCHAR(255) NOT NULL,
-      two_fa BOOLEAN NOT NULL
+      auth_token BOOLEAN NOT NULL
     )
   `);
   console.log("✅ Table 'users' is ready!");
