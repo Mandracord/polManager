@@ -37,7 +37,7 @@
           <th>POL ID</th>
           <th>Handle</th>
           <th>SQ ACC</th>
-          <th class="text-center" style="width: 70px;">2FA Enabled</th>
+          <th>2FA Active</th>
           <th class="text-end">Actions</th>
         </tr>
       </thead>
