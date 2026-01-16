@@ -25,6 +25,8 @@ No passwords are stored.
 
 - Open http://localhost:3000/api/entries 
 
+![demo](demo.png)
+
 ## License 
 
 MIT
