@@ -30,15 +30,15 @@
       </div>
     </div>
 
-    <table class="table table-striped table-hover align-middle">
+    <table class="table borderless align-middle">
       <thead>
         <tr>
           <th>ID</th>
           <th>POL ID</th>
           <th>Handle</th>
           <th>SQ ACC</th>
-          <th>2FA Active</th>
-          <th class="text-end">Actions</th>
+          <th class="text-center" style="width: 200px;">2FA Active</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -51,14 +51,14 @@
             <i :class="entry.auth_token ? 'fas fa-check text-success' : 'fas fa-times text-danger'"></i>
           </td>
           <td class="text-end d-flex justify-content-end gap-1">
-            <button class="btn btn-sm btn-primary" @click="copyPolId(entry)">
-              <i class="fas fa-copy"></i>
+            <button class="btn btn-primary" @click="copyPolId(entry)">
+              <i class="fas fa-copy"></i>&nbsp;&nbsp;Copy ID
             </button>
-            <button class="btn btn-sm btn-warning" @click="editEntry(entry)">
-              <i class="fas fa-edit"></i>
+            <button class="btn btn-success" @click="editEntry(entry)">
+              <i class="fas fa-edit"></i>&nbsp;&nbsp;Edit
             </button>
-            <button class="btn btn-sm btn-danger" @click="deleteEntry(entry.id)">
-              <i class="fas fa-trash"></i>
+            <button class="btn btn-danger" @click="deleteEntry(entry.id)">
+              <i class="fas fa-trash"></i>&nbsp;&nbsp;Delete
             </button>
           </td>
         </tr>
