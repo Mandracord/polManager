@@ -14,8 +14,10 @@ No passwords are stored.
 ## Install
 
 - Download or clone the repo
+- Change .env.example to .env and update the values inside.
 - Run the docker-compose.yml:
     `docker compose up -d --build` 
+
 
 ## Access Webpage
 
